@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4GAT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div>
+          <span class="tag">4GAT</span>
+        </div>
+        <div class="stats">
+          <span id="gateCounter">Gates: 0 / 4</span>
+          <span id="healthCounter">Health: 100</span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="600"></canvas>
+
+      <div id="overlay" class="overlay visible">
+        <div class="panel">
+          <h1>4GAT</h1>
+          <p>Collect all four energy gates, dodge the drones, and reach the portal.</p>
+          <ul>
+            <li>Move: WASD or Arrow Keys</li>
+            <li>Goal: Gather 4 gates</li>
+            <li>Win: Activate the portal at the center</li>
+          </ul>
+          <button id="startButton">Start Mission</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
